@@ -1,0 +1,5 @@
+[Unit]
+Description=Test application
+
+[Service]
+ExecStart=/bin/sleep infinity

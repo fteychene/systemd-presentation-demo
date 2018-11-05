@@ -1,0 +1,8 @@
+[Unit]
+Description=Test application
+Wants=postgresql.service
+Requires=redis-server.service
+After=redis-server.service postgresql.service
+
+[Service]
+ExecStart=/srv/demo/echo_script.sh
